@@ -1,0 +1,49 @@
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+*.pyc/
+__pycache__/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Environment
+.env
+
+# Compiled Python files
+*.pyc
+*.pyo
+
+# Cache files
+*.pyc/
+__pycache__/
+
+# Virtual Environment
+venv/
+venv2/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Mac OS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Project specific (change or add as needed)
+data/
+output/
