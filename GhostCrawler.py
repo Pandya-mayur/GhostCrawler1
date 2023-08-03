@@ -167,8 +167,19 @@ if __name__ == "__main__":
     parser.add_argument('--mp_units', type=int, help='Specify the number of multiprocessing units to use.')
     parser.add_argument('--continuous_write', action='store_true', help='Enable continuous writing to the CSV file.')
     args = parser.parse_args()
+ 
+   # Check if the --update flag is provided
+    if args.update:
+        print("Updating GhostCrawler1 to the latest version...")
+        # Here, you can implement the update process (e.g., using git pull if the code is on a Git repository)
+        # After the update process is completed, you may exit the script or continue as needed.
 
-    # Check if at least one engine is specified
+    # Check if the -h or --help flag is provided
+    if args.engines is None:
+        parser.print_help()
+        exit()
+  
+   # Check if at least one engine is specified
     if not args.engines or len(args.engines[0]) == 0:
         print("Error: At least one search engine must be specified.")
     else:
