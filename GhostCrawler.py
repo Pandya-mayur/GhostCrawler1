@@ -20,23 +20,23 @@ field_delim = ','
 
 # Supported dark web search engines
 supported_engines = {
-    'ahmia': "http://msydqstlz2kzerdg.onion/",
-    'darksearchenginer': "http://darksearchioeagkg2.onion/",
-    'darksearchio': "http://darksearchio7odl64.onion/",
-    'deeplink': "http://gjobqjj7wyczbqie.onion/",
-    'evosearch': "http://bznjtqphs2lp4xdd.onion/",
-    'haystack': "http://haystakvxad7wbk5.onion/",
-    'multivac': "http://multivacigqzqqon.onion/",
-    'notevil': "http://zlal32teyptf4tvi.onion/",
-    'onionland': "http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/",
-    'onionsearchengine': "http://5u56fjmxu63xcmbk.onion/",
-    'onionsearchserver': "http://darkf6l4nywtlx47.onion/",
-    'phobos': "http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/",
-    'tor66': "http://tor66sezptuu2nta.onion/",
-    'tordex': "http://tordex7iie7z2wcg.onion/",
-    'torgle': "http://torglecnwuglf2gmyox3obsm3gvmzz4tds3ljkdasr23ed2dyprlqd.onion/",
-    'torgle1': "http://torgleklr4i7yzh4.onion/",
-    'tormax': "http://tormaxunodsbvtgo.onion/",
+   "ahmia": "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion",  # Offline?
+    "darksearchio": "http://darksearch.io",
+    "onionland": "http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion",
+    "notevil": "http://hss3uro2hsxfogfq.onion",  # Offline?
+    "darksearchenginer": "http://l4rsciqnpzdndt2llgjx3luvnxip7vbyj6k6nmdy4xs77tx6gkd24ead.onion",
+    "phobos": "http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion",
+    "onionsearchserver": "http://3fzh7yuupdfyjhwt3ugzqqof6ulbcl27ecev33knxe3u7goi3vfn2qqd.onion",
+    "torgle": "http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion",  # "torgle" -> "Submarine"
+    "torgle1": "http://torgle5fj664v7pf.onion",  # Offline?
+    "onionsearchengine": "http://onionf4j3fwqpeo5.onion",  # Offline?
+    "tordex": "http://tordex7iie7z2wcg.onion",  # Offline?
+    "tor66": "http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion",
+    "tormax": "http://tormaxunodsbvtgo.onion",  # Offline?
+    "haystack": "http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion",
+    "multivac": "http://multivacigqzqqon.onion",  # Offline?
+    "evosearch": "http://evo7no6twwwrm63c.onion",  # Offline?
+    "deeplink": "http://deeplinkdeatbml7.onion",  # Offline?
 }
 
 # Helper function to clear text
