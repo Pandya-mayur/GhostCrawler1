@@ -93,13 +93,26 @@ def write_to_csv(csv_writer, data):
         data.get('phone_numbers', ''),
         data.get('ip_addresses', '')
     ])
-
 # Function to update the search engines' URL list (Part 7)
 def update_search_engines():
     # Add code here to update the supported_engines dictionary with the latest URLs
-    supported_engines['ahmia'] = "http://new-url-for-ahmia.onion/"
-    supported_engines['haystack'] = "http://new-url-for-haystack.onion/"
-    # ... (Add the updated URLs for other engines)
+    supported_engines['ahmia'] = "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion"
+    supported_engines['darksearchio'] = "http://darksearch.io"
+    supported_engines['onionland'] = "http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion"
+    supported_engines['notevil'] = "http://hss3uro2hsxfogfq.onion"
+    supported_engines['darksearchenginer'] = "http://l4rsciqnpzdndt2llgjx3luvnxip7vbyj6k6nmdy4xs77tx6gkd24ead.onion"
+    supported_engines['phobos'] = "http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion"
+    supported_engines['onionsearchserver'] = "http://3fzh7yuupdfyjhwt3ugzqqof6ulbcl27ecev33knxe3u7goi3vfn2qqd.onion"
+    supported_engines['torgle'] = "http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion"  # "torgle" -> "Submarine"
+    supported_engines['torgle1'] = "http://torgle5fj664v7pf.onion"
+    supported_engines['onionsearchengine'] = "http://onionf4j3fwqpeo5.onion"
+    supported_engines['tordex'] = "http://tordex7iie7z2wcg.onion"
+    supported_engines['tor66'] = "http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion"
+    supported_engines['tormax'] = "http://tormaxunodsbvtgo.onion"
+    supported_engines['haystack'] = "http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion"
+    supported_engines['multivac'] = "http://multivacigqzqqon.onion"
+    supported_engines['evosearch'] = "http://evo7no6twwwrm63c.onion"
+    supported_engines['deeplink'] = "http://deeplinkdeatbml7.onion"
 
 # The main web scraping script (Part 6)
 def scrape():
