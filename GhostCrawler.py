@@ -94,6 +94,13 @@ def write_to_csv(csv_writer, data):
         data.get('ip_addresses', '')
     ])
 
+# Function to update the search engines' URL list (Part 7)
+def update_search_engines():
+    # Add code here to update the supported_engines dictionary with the latest URLs
+    supported_engines['ahmia'] = "http://new-url-for-ahmia.onion/"
+    supported_engines['haystack'] = "http://new-url-for-haystack.onion/"
+    # ... (Add the updated URLs for other engines)
+
 # The main web scraping script (Part 6)
 def scrape():
     global filename
@@ -123,6 +130,10 @@ def scrape():
             if not (args.exclude and len(args.exclude) > 0 and e in args.exclude[0]):
                 func_args.append("{}:{}".format(e, args.search))
                 stats_dict[e] = 0
+
+    # Check if the -update flag is provided and update the search engines' URL list if necessary
+    if args.update:
+        update_search_engines()
 
     # Doing multiprocessing
     if args.mp_units and args.mp_units > 0:
@@ -166,20 +177,10 @@ if __name__ == "__main__":
     parser.add_argument('--exclude', nargs='*', action='append', help='Specify the search engines to exclude.')
     parser.add_argument('--mp_units', type=int, help='Specify the number of multiprocessing units to use.')
     parser.add_argument('--continuous_write', action='store_true', help='Enable continuous writing to the CSV file.')
+    parser.add_argument('-update', action='store_true', help='Update the search engines\' URL list.')
     args = parser.parse_args()
- 
-   # Check if the --update flag is provided
-    if args.update:
-        print("Updating GhostCrawler1 to the latest version...")
-        # Here, you can implement the update process (e.g., using git pull if the code is on a Git repository)
-        # After the update process is completed, you may exit the script or continue as needed.
 
-    # Check if the -h or --help flag is provided
-    if args.engines is None:
-        parser.print_help()
-        exit()
-  
-   # Check if at least one engine is specified
+    # Check if at least one engine is specified
     if not args.engines or len(args.engines[0]) == 0:
         print("Error: At least one search engine must be specified.")
     else:
